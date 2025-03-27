@@ -24,6 +24,7 @@ public class ObstaclesSpawner : MonoBehaviour
         SpawnInitialObstaclesOrOrbs(orbsPrefab, ghostOrbsPrefab,maxOrbsToSpawn,1.5f,false,30);
     }
 
+    // Object Pooling - Instantiating specifc number of obstacles and orbs and keep on re-using it throughtout the game 
     private void SpawnInitialObstaclesOrOrbs(GameObject myPrefab, GameObject ghostPrefab, int maxNumber, float yPos,bool isObstacle,float range)
     {
         positionRefrence = gameObject.transform.position.z;
